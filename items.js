@@ -1025,6 +1025,5 @@ var items = [{
   "used_manufacturer": false
 }];
 
-console.log("items");
 
 
