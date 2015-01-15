@@ -8,5 +8,3 @@ console.log("test");
 	// 	4. Average the price
 	// 	5. Spit it out
 
-items;
-
