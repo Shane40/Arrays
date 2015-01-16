@@ -18,7 +18,8 @@ console.log("test");
 
 
 //QUESTION 1
-//
+//Show me how to calculate the average price of all items. Please console.log the average.
+
 var emptyArray = [];
 console.log(emptyArray);
 
@@ -41,9 +42,8 @@ console.log (average.toFixed(2));
 
 console.log ("The average price is " + average.toFixed(2));
 
-
 //QUESTION2
-//
+//Show me how to get an array of items that cost between $14.00 and $18.00 USD
 //
 var itemsBetween = [];
 
@@ -51,21 +51,31 @@ items.forEach ( function (item){
 	if (item.price >= 14 && item.price <= 18) {
 		itemsBetween.push(item.title);
 	}
-	
 });
 console.log(itemsBetween);
 
 //QUESTION3
-//return currency_code === "GPB";
+// Show me how find the item with a "GBP" currency code and print its name and price. 
+// Please console.log the one you find.
 //
-
-
 
 var QUESTION3 = items.filter (function (object){
 	return object.currency_code === "GBP";
 
 });
 	console.log(QUESTION3.currency_code);
+
+QUESTION3.forEach( function(beer){	
+	console.log(beer.title)
+});
+
+//QUESTION4
+//Show me how to find which items are made of wood. 
+//Please console.log the ones you find.
+
+
+
+
 
 
 
