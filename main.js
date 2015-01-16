@@ -8,3 +8,12 @@ console.log("test");
 	// 	4. Average the price
 	// 	5. Spit it out
 
+var items, price;
+
+var total.price = 0;
+var avg.price = 0;
+items.filter (function (a)){
+	total.price += a.price;
+});
+avg.price = total.price/items.length;
+console.log(avg.price);
