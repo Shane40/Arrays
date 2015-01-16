@@ -1,6 +1,14 @@
 console.log("test");
 
-//FIRST PROBLEM
+
+// 1. What am I working with?
+// 2. What do I want to do with it? TELL YOURSELF IN A SENTENCE: WHat do I want to do?
+// 3. What's the best way to get that data (what kind of forEach)
+//4. Define the function?
+//5. Decide what you want
+
+
+
 	// What I want console to do:
 	// 	1. Go down the list of items
 	// 	2. Find price
@@ -8,12 +16,38 @@ console.log("test");
 	// 	4. Average the price
 	// 	5. Spit it out
 
-var items, price;
 
-var total.price = 0;
-var avg.price = 0;
-items.filter (function (a)){
-	total.price += a.price;
+//QUESTION 1
+//
+var emptyArray = [];
+console.log(emptyArray);
+
+items.forEach( function(object){
+//console.log(object.price);
+emptyArray.push (object.price)
 });
-avg.price = total.price/items.length;
-console.log(avg.price);
+
+//console.log(items);
+console.log(emptyArray);
+
+var total = emptyArray.reduce(function (a, b) {
+ 	return a+b
+
+ });
+console.log (total);
+
+var average = total / emptyArray.length;
+console.log (average.toFixed(2));
+
+console.log ("The average price is " + average.toFixed(2));
+
+//QUESTION 2
+//
+var QUESTION1 = emptyArray.filter (function (object){
+	return object === 20;
+});
+	console.log(QUESTION1);
+
+
+
+
