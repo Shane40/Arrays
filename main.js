@@ -41,7 +41,7 @@ console.log (average.toFixed(2));
 
 console.log ("The average price is " + average.toFixed(2));
 
-//QUESTION 2
+//QUESTIONXXXX
 //
 var QUESTION1 = emptyArray.filter (function (object){
 	return object === 20;
@@ -49,5 +49,26 @@ var QUESTION1 = emptyArray.filter (function (object){
 	console.log(QUESTION1);
 
 
+
+// var newArray = [];
+
+// items.forEach ( function(object){
+// newArray.push (object.price);
+// });
+
+// console.log(newArray);
+
+//QUESTION2
+var itemsBetween = [];
+
+items.forEach ( function (item){
+	if (item.price >= 14 && item.price <= 18) {
+		itemsBetween.push(item.title);
+	}
+	
+});
+console.log(itemsBetween);
+
+//QUESTION3
 
 
