@@ -41,24 +41,10 @@ console.log (average.toFixed(2));
 
 console.log ("The average price is " + average.toFixed(2));
 
-//QUESTIONXXXX
-//
-var QUESTION1 = emptyArray.filter (function (object){
-	return object === 20;
-});
-	console.log(QUESTION1);
-
-
-
-// var newArray = [];
-
-// items.forEach ( function(object){
-// newArray.push (object.price);
-// });
-
-// console.log(newArray);
 
 //QUESTION2
+//
+//
 var itemsBetween = [];
 
 items.forEach ( function (item){
@@ -70,5 +56,18 @@ items.forEach ( function (item){
 console.log(itemsBetween);
 
 //QUESTION3
+//return currency_code === "GPB";
+//
+
+
+
+var QUESTION3 = items.filter (function (object){
+	return object.currency_code === "GBP";
+
+});
+	console.log(QUESTION3.currency_code);
+
+
+
 
 
