@@ -18,7 +18,8 @@ console.log("test");
 
 
 //QUESTION 1
-//Show me how to calculate the average price of all items. Please console.log the average.
+// Show me how to calculate the average price of all items. 
+// Please console.log the average.
 
 var emptyArray = [];
 console.log(emptyArray);
@@ -73,7 +74,14 @@ QUESTION3.forEach( function(beer){
 //Show me how to find which items are made of wood. 
 //Please console.log the ones you find.
 
+var wood = items.filter ( function (object){
+	return object.materials.indexOf("wood") >= 0;
+		
+});
 
+	wood.forEach ( function (item) {
+		console.log(item.title);
+	});
 
 
 
