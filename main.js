@@ -1,6 +1,3 @@
-console.log("test");
-
-
 // 1. What am I working with?
 // 2. What do I want to do with it? TELL YOURSELF IN A SENTENCE: WHat do I want to do?
 // 3. What's the best way to get that data (what kind of forEach)
@@ -43,7 +40,7 @@ console.log (average.toFixed(2));
 
 console.log ("The average price is " + average.toFixed(2));
 
-//QUESTION2
+//QUESTION 2
 //Show me how to get an array of items that cost between $14.00 and $18.00 USD
 //
 var itemsBetween = [];
@@ -55,7 +52,7 @@ items.forEach ( function (item){
 });
 console.log(itemsBetween);
 
-//QUESTION3
+//QUESTION 3
 // Show me how find the item with a "GBP" currency code and print its name and price. 
 // Please console.log the one you find.
 //
@@ -70,7 +67,7 @@ QUESTION3.forEach( function(beer){
 	console.log(beer.title)
 });
 
-//QUESTION4
+//QUESTION 4
 //Show me how to find which items are made of wood. 
 //Please console.log the ones you find.
 
@@ -78,12 +75,13 @@ var wood = items.filter ( function (object){
 	return object.materials.indexOf("wood") >= 0;
 		
 });
-
 	wood.forEach ( function (item) {
 		console.log(item.title);
 	});
 
-
+//QUESTION 5
+//Show me how to find 
+//which items are made of eight or more materials. Please console.log the ones you find.
 
 
 
