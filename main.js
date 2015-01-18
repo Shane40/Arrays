@@ -1,11 +1,9 @@
-//Chelsea's suggestions
 // 1. Figure out what working with.
 // 2. What do I want to do with it? TELL YOURSELF IN A SENTENCE: What do I want to do?
 // 3. What's the best way to get that data (what kind of forEach)?
 // 4. Define the function.
 // 5. Decide what you want the function to do.
 // 6. Console log the outcome.
-
 
 //QUESTION 1
 // Show me how to calculate the average price of all items. 
@@ -16,6 +14,8 @@
 	// 	3. Call up the price
 	// 	4. Average the price
 	// 	5. Spit it out
+	
+
 
 var emptyArray = [];
 console.log(emptyArray);
@@ -88,24 +88,28 @@ var wood = items.filter ( function (object){
 // asking that within the Materials object, which ARRAY contains eight or
 // more items.
 
-// //var itemsMaterials = [];
-// items.forEach ( function (item){
-// 	if (item.materials.length >= 7) {
-// 		itemsMaterials.push(item.materials.length);
+items.forEach ( function (item){
+	if (item.materials.length >= 7) {
+	itemsMaterials.push(item.materials.length);
+	});
+
+itemsMaterials.forEach (function (eight) {
+	console.log(eight);
+	});
+
+// var itemsMaterials = items.filter ( function (object){
+// 	return object.length >= 7;
+
 // });
+// 	console.log(itemsMaterials);
 
-// 	itemsMaterials.forEach (function (eight) {
-// 	console.log(eight);
-// 	});
+// //QUESTION 6
+// //Show me how to calculate how many items were made by their sellers.
 
-var itemsMaterials = items.filter ( function (object){
-	return object.title.length >= 7;
-
+var sellers = items.filter ( function (idid){
+	return object.who_made.indexOf("i_did") > 0;
+		
 });
-	console.log(itemsMaterials);
-
-//QUESTION 6
-//Show me how to calculate how many items were made by their sellers.
-
-
+	sellers.forEach ( function (idid) {
+		console.log(item.title);
 
