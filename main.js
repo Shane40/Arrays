@@ -88,40 +88,76 @@ var wood = items.filter ( function (object){
 // asking that within the Materials object, which ARRAY contains eight or
 // more items.
 
-// var materials = items.forEach ( function (item){
-// 	console.log (materials);
-// 	});
 
 var itemsMaterials = [];
+var item;
 
-items.forEach ( function (item){
-	if (item.materials.length > 7) {
-	return itemsMaterials.push(item.title);
+items.forEach ( function (eight){
+	if (eight.materials.length > 7) {
+	itemsMaterials.push(eight);
 	}
 });
-console.log(itemsMaterials);
+	console.log(itemsMaterials);
 
-// itemsMaterials.forEach (function (eight) {
-// 	console.log(eight);
-// 	});
-// var someMaterials = [];
-// var eight = items.map ( function (materials, number) {
-// 	return materials;
-// });
+itemsMaterials.forEach ( function (answer) {
+	console.log (answer.title + " " + answer.materials);
+});
 
-// var itemsMaterials = items.filter ( function (object){
-// 	return object.length >= 7;
 
-// });
-// 	console.log(itemsMaterials);
 
 // //QUESTION 6
 // //Show me how to calculate how many items were made by their sellers.
+// What the question is asking: Under the "who_made" field
+// is "idid"; he wants to me to add those up and spit it out.
 
-var sellers = items.filter ( function (idid){
-	return object.who_made.indexOf("i_did") > 0;
-		
+var me = "i_did";
+// var someone = "someone_else";
+var sellers = items.filter ( function (object){
+	return object.who_made === me;	
 });
-	sellers.forEach ( function (idid) {
-		console.log(item.title);
+	console.log(sellers.length + " were made by their sellers.");
 
+
+
+
+// Define a function sum() and a function multiply() that
+// sums and multiplies (respectively) all the numbers in 
+// an array of numbers. For example, sum([1,2,3,4]) should return 
+// 10, and multiply([1,2,3,4]) should return 24.
+		// ---------------------
+
+function sum (){
+
+}
+	
+		var array = [1,2,3,4,5,6,7,8,9,10];
+		var total = 0;
+		var sum = function (){
+			array.forEach(function(x){
+				total += x; // use "this" when something that's changing
+				console.log(total);
+			});
+};
+sum();
+
+function mult (){
+
+}
+	
+		var array = [1,2,3,4,5,6,7,8,9,10];
+		var total = 1;
+		var mult = function (){
+			array.forEach(function(x){
+				total *= x; // use "this" when something that's changing
+				console.log(total);
+			});
+};
+mult();
+
+
+// 		function multiply(){
+    	
+// 		}
+// }
+	
+	
