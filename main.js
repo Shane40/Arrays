@@ -88,14 +88,26 @@ var wood = items.filter ( function (object){
 // asking that within the Materials object, which ARRAY contains eight or
 // more items.
 
-items.forEach ( function (item){
-	if (item.materials.length >= 7) {
-	itemsMaterials.push(item.materials.length);
-	});
+// var materials = items.forEach ( function (item){
+// 	console.log (materials);
+// 	});
 
-itemsMaterials.forEach (function (eight) {
-	console.log(eight);
-	});
+var itemsMaterials = [];
+
+items.forEach ( function (item){
+	if (item.materials.length > 7) {
+	return itemsMaterials.push(item.title);
+	}
+});
+console.log(itemsMaterials);
+
+// itemsMaterials.forEach (function (eight) {
+// 	console.log(eight);
+// 	});
+// var someMaterials = [];
+// var eight = items.map ( function (materials, number) {
+// 	return materials;
+// });
 
 // var itemsMaterials = items.filter ( function (object){
 // 	return object.length >= 7;
